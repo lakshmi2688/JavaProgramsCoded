@@ -12,6 +12,7 @@ public class AddStrings {
 		String str2 = in.nextLine();
 		String res = addStrings(str1,str2);
 		System.out.println("Added string is : "+res);
+		
 	}
 	
 	public static String addStrings(String str1, String str2)
