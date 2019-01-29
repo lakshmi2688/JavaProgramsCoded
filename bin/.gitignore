@@ -1,7 +1,9 @@
 /AddStrings.class
 /DetectCapital.class
 /FirstUniqueCharInAString.class
+/LinkedListConstructAndReversal.class
 /LongestCommonPrefix.class
+/Node.class
 /PalindromeNumber.class
 /ReverseInteger.class
 /ReverseString.class
@@ -9,3 +11,5 @@
 /StringToLowerCase.class
 /TwoSum.class
 /ValidParenthesis.class
+/binarysearchtreeproblems/
+/binarytreeproblems/
