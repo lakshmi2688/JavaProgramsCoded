@@ -2,6 +2,19 @@ package binarytreeproblems;
 
 import java.util.LinkedList;
 
+/* * Given a binary tree and a sum, find if there is a path from root to leaf
+ * which sums to this sum.
+ * 
+ * Solution
+ * Keep going left and right and keep subtracting node value from sum.
+ * If leaf node is reached check if whatever sum is remaining same as leaf node data.
+ * 
+ * Time complexity is O(n) since all nodes are visited.
+ * 
+ * Test cases:
+ * Negative number, 0 and positive number
+ * Tree with 0, 1 or more nodes*/
+
 class TreeNode4
 {
 	int data;
@@ -13,7 +26,7 @@ class TreeNode4
 	}
 }
 
-public class RootToLeafSumBinaryTree {
+public class RootToLeafSumExistsForBinaryTree {
 	
 	public static void main(String[] args)
 	{
@@ -41,7 +54,7 @@ public class RootToLeafSumBinaryTree {
 		
 		if(root.left == null && root.right == null) // checking to see if leaf node
 		{
-			if(root.data == sum)
+			if(sum == root.data)
 			{
 				result.add(root.data);
 				return true;
@@ -57,7 +70,6 @@ public class RootToLeafSumBinaryTree {
 			result.add(root.data);
 			return true;
 		}
-		
 		
 		if(rootToLeafSum(root.right, sum - root.data, result))
 		{
