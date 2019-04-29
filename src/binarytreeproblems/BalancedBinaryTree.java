@@ -61,8 +61,10 @@ public class BalancedBinaryTree {
     {
         if(root == null) return 0;
         int left = maxDepth(root.left);
+        //non-balanced tree, left or right will be -1
         if(left == -1) return -1;
         int right = maxDepth(root.right);
+      //non-balanced tree, left or right will be -1
         if(right == -1) return -1;
         if(Math.abs(right - left) > 1) return -1;
         return 1+Math.max(left,right);

@@ -31,6 +31,7 @@ public class MinDepthOfBinaryTree {
 		}
 		int left = heightOfBST(root.left);
 		int right = heightOfBST(root.right);
+		/* [1,2,null] will have root.right == null, return 1 + left ; answer should be 2*/
 		if(root.left == null) return (1 + right);
 		if(root.right == null) return (1 + left);
 		return  Math.min(left, right) + 1;

@@ -29,6 +29,7 @@ public class SameBinaryTree {
 
 	public static  boolean sameTree(TreeNode2 root1, TreeNode2 root2)
 	{
+		//termination condition when root1.left, root2.left becomes null
 		if(root1 == null && root2 == null)
 		{
 			return true;

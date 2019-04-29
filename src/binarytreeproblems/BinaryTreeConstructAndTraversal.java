@@ -1,7 +1,8 @@
 package binarytreeproblems;
 import java.util.Random;
 
-/* Total time for preorder/inorder/postorder = O(n) bcoz we visit all the nodes
+/* Depth first binary tree traversal
+ * Total time for preorder/inorder/postorder = O(n) bcoz we visit all the nodes
  * size of the stack in the worst case will be the height of the binary tree*/
 
 class TreeNode

@@ -132,11 +132,13 @@ public class SearchInBinarySearchTree {
 	
 	public static Root search(Root root, int searchData)
 	{
+		//if searchData does not xist, it returns null
 		if(root == null) 
 		{
 			return null;
 		}
 		
+		//if search data exists, returns root
 		if(root.data == searchData)
 		{
 			return root;
