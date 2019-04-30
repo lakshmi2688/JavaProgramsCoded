@@ -16,6 +16,7 @@ public class ReverseStringWithIntK {
 		System.out.println("Enter k");
 		int k = in.nextInt();
 		char[] arr = str.toCharArray();
+		//abcdefghijkmn, k=3
 		for(int i=0;i<arr.length;i+=2*k)
 		{
 			int left = i;

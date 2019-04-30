@@ -33,6 +33,7 @@ public class PalindromeNumber {
         if(x < 0 || (x % 10 == 0 && x != 0)) return false;
         int num =0;
         int y = x;
+        //x = 121
         while(x != 0)
         {
             int tail = x % 10;
